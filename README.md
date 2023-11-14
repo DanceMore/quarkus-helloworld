@@ -11,4 +11,6 @@ mvn io.quarkus.platform:quarkus-maven-plugin:3.5.1:create \
     -DprojectGroupId=io.github.dancemore\
     -DprojectArtifactId=quarkus-helloworld \
     -Dextensions="resteasy-reactive, resteasy-reactive-jackson, smallrye-openapi"
+
+./mvnw quarkus:add-extension -Dextensions='jdbc-postgresql, hibernate-orm-panache'
 ```
